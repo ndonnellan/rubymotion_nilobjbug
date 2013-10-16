@@ -27,7 +27,7 @@ class AppDelegate
       # Interestingly, trying to 'raise' an exception after checking for nil will also cause a separate uncaught exception to be thrown
     end
 
-    puts "Success!" # This line never gets called
+    puts "Success!" # This may get called before the asynchronous block finishes
 
     true
   end
